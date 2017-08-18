@@ -12,7 +12,12 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Cart Application</title>
 </head>
-<body>
+<body onload="setDocumentCookie()">
 <h1>Hello!</h1>
 </body>
+<script>
+    function setDocumentCookie() {
+        document.cookie="wlt=111222333";
+    }
+</script>
 </html>
