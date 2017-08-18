@@ -30,4 +30,6 @@
         <property name="prefix" value="/WEB-INF/jsp/"/>
         <property name="suffix" value=".jsp"/>
     </bean>
+    <!--添加spring-webflow的配置-->
+    <import resource="spring-webflow.xml"/>
 </beans>

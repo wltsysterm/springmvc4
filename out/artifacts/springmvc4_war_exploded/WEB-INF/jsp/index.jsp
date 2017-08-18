@@ -14,6 +14,8 @@
 </head>
 <body onload="setDocumentCookie()">
 <h1>Hello!</h1>
+<h1>Hello!</h1><br/>
+<a href="shopping.do">View Cart</a>
 </body>
 <script>
     function setDocumentCookie() {
