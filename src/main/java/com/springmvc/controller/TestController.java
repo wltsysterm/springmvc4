@@ -26,4 +26,9 @@ public class TestController {
         System.out.println("11111");
         return "测试不返回页面";
     }
+
+    @RequestMapping("index")
+    public ModelAndView index(){
+        return new ModelAndView("index");
+    }
 }
