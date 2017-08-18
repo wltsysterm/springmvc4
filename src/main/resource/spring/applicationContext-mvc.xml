@@ -23,6 +23,7 @@
     <!-- 处理静态资源 -->
     <mvc:default-servlet-handler/>
     <!-- 配置视图解析器 -->
+    <!--视图解析器默认有一套，如果要重写，那么如下方式，其他方式还有很多，可以参考网络上的。默认所有的requestmapping都会被视图解析器拦截，如果不想被拦截只返回数据，请添加@responseBody-->
     <bean id="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
         <property name="viewClass" value="org.springframework.web.servlet.view.JstlView"/>
         <property name="prefix" value="/WEB-INF/jsp/"/>
