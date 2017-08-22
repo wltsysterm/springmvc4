@@ -21,8 +21,8 @@
     </context:component-scan>
     <!--和SpringMVC相关如下配置，经过验证，这个是SpringMVC必须要配置的，因为它声明了@RequestMapping、@RequestBody、@ResponseBody等的spring-bean。并且，该配置默认加载很多的参数绑定方法，比如json转换解析器等-->
     <mvc:annotation-driven />
-    <!-- 处理静态资源 -->
-    <mvc:default-servlet-handler/>
+    <!-- 处理静态资源  下面这串跟webflow的页面跳转冲突了。-->
+<!--    <mvc:default-servlet-handler/>-->
     <!-- 配置视图解析器 -->
     <!--视图解析器默认有一套，如果要重写，那么如下方式，其他方式还有很多，可以参考网络上的。默认所有的requestmapping都会被视图解析器拦截，如果不想被拦截只返回数据，请添加@responseBody-->
     <bean id="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
